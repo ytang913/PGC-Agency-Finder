@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PGC Agency Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""
+  ></script>
+  <script type="text/javascript" src="js/calls.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>PGC Agency Finder</h1>
+      <img src="static/images/logo.jpg" alt="PG County Seal" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="container">
+        <div>
+          <form class="targetForm" id="labForm">
+            <label for="agency">Agency</label>
+            <input type="text" id="agency" name="agency" placeholder="Agency Name"/>
+            <br />
+            <button id="formBtn">List</button>
+            <button id="mapBtn">Map</button>
+            <button id='allBtn'>Get All Offices</button>
+          </form>
+        </div>
+        <div class = 'listcontainer'></div>
+      </div>
+        <div id="mapid"></div>
+    </div>
+    <script>
+        const mymap = L.map('mapid').setView([38.9869, -76.9426], 13);
+        // eslint-disable-next-line no-undef
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 17,
+          id: 'mapbox/streets-v11',
+          tileSize: 512,
+          zoomOffset: -1,
+          accessToken: 'pk.eyJ1IjoiZXJpY25ndXllbjk4IiwiYSI6ImNrOGdodmlzbDAxdGozaW85OTVsN2VmMngifQ.U_gmqOqUXoGHkTu9wuEpBQ'
+        }).addTo(mymap);
+
+        const marker = L.marker([38.988251, -76.941577]).addTo(mymap);
+        marker.bindPopup('University of Maryland').openPopup();
+        const layerGroup = L.layerGroup().addTo(mymap);
+        // adds MAP
+        const longLat = [];
+        const name = [];
+        const address = [];
+        const agency = [];
+
+        const formBtn = document.querySelector('#formBtn');
+        formBtn.addEventListener('click', sendForm);
+        const mapBtn = document.querySelector('#mapBtn');
+        mapBtn.addEventListener('click', getMap);
+        const allBtn = document.querySelector('#allBtn');
+        allBtn.addEventListener('click', getAll);
+    </script>
+  </body>
+</html>
