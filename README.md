@@ -14,11 +14,10 @@ The web application was deployed on Microsoft Azure: https://pgcagencyfinder.azu
 
 # Result when clicking "Get All Offices" button
 
-# Result when they enter a valid agency in the search bar and click on "List" button
+# Result when a valid agency is entered in the search bar and click on "List" button
 
-# Result when they enter a invalid agency in the search bar and click on "List" button
+# Result when an invalid agency is entered in the search bar and click on "List" button
 
-# Result when they click on the About Navigation button
-
+# Result when About Navigation button is clicked
 
 
