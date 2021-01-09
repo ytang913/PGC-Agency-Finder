@@ -15,7 +15,7 @@ The web application was deployed on Microsoft Azure: https://pgcagencyfinder.azu
 # Result when clicking "Get All Offices" button
 
 # Result when a valid agency is entered in the search bar and click on "List" button
-
+![](public/static/images/PGCAgencyFinderValidResult.jpg)
 # Result when an invalid agency is entered and "List" button is chosen
 
 # Result when About Navigation button is clicked
