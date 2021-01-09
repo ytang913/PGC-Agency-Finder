@@ -10,15 +10,15 @@ Leaflet is used for the map itself which allows user interaction and provides th
 
 The web application was deployed on Microsoft Azure: https://pgcagencyfinder.azurewebsites.net/
 
-# What the user sees when opening the application
+# Result when opening the application
 
-# What the user sees when clicking "Get All Offices" button
+# Result when clicking "Get All Offices" button
 
-# What the user sees when they enter a valid agency in the search bar and click on "List" button
+# Result when they enter a valid agency in the search bar and click on "List" button
 
-# What the user sees when they enter a invalid agency in the search bar and click on "List" button
+# Result when they enter a invalid agency in the search bar and click on "List" button
 
-# What the user sees when they click on the About Navigation button
+# Result when they click on the About Navigation button
 
 
 
