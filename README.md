@@ -18,7 +18,7 @@ The web application was deployed on Microsoft Azure: https://pgcagencyfinder.azu
 ![](public/static/images/PGCAgencyFinderValidResult.jpg)
 # Result when an invalid agency is entered and "List" button is chosen
 
-# Result when a valid agency is entered and the'Map' button is chosen
+# Result when a valid agency is entered and the 'Map' button is chosen
 
 # Result when About Navigation button is chosen
 
