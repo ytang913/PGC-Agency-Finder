@@ -3,7 +3,9 @@
 # About
 Many students and faculty coming to the University of Maryland, College Park are unfamilar with PG County. On top of the many stresses of being in an academic environment, finding the nearest PG County Agency to solve their problems can be a daunting task.
 
-To solve this problem I created the PGC Agency Finder which is essentially a full stack web application that is used to look up PG County Government Agencies. The application works by entering the agency of interest, which results in a list being populated with the desired agencies. The list itself will display the name of the office,its address, and its agency. There is also a map function, which will display the location of each populated agency with the accompanying information in a pop-up banner. Furthermore, the "Get All Offices" button can be used to get all agencies on the map and in the list. Possble agencies users can enter are HEALTH, DPWT, COURTS, OCS, SOIL CONSERVATION, FIRE, PSC, DER, POLICE, SHERIFF, COUNTY EXECUTIVE, OHRM, and OIT.
+To solve this problem I created the PGC Agency Finder which is essentially a full stack web application that is used to look up PG County Government Agencies.
+
+The application works by entering the agency of interest, which results in a list being populated with the desired agencies. The list itself will display the name of the office,its address, and its agency. There is also a map function, which will display the location of each populated agency with the accompanying information in a pop-up banner. Furthermore, the "Get All Offices" button can be used to get all agencies on the map and in the list. Possble agencies users can enter are HEALTH, DPWT, COURTS, OCS, SOIL CONSERVATION, FIRE, PSC, DER, POLICE, SHERIFF, COUNTY EXECUTIVE, OHRM, and OIT.
 
 # Documentation
 This web application was done using HTML, CSS, JavaScript, Leaflet, Express, Node.Js, APIs, and JSON. 
