@@ -21,6 +21,7 @@ PUT is used to populate the list of offices with offices of interest based on ag
 POST is used to get all offices of interest and return information needed to generate map points. Returns a filtered JSON object with office: description, address, city, agency, longitude, latitude. POST includes long and lat PUT does not.
 
 The data of the different agencies came from the PG County API: https://data.princegeorgescountymd.gov/
+
 The web application was deployed on Microsoft Azure: https://pgcagencyfinder.azurewebsites.net/
 
 
