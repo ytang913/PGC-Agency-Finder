@@ -14,7 +14,11 @@ Furthermore, the "Get All Offices" button can be used to get all agencies on the
 Possble agencies users can enter are HEALTH, DPWT, COURTS, OCS, SOIL CONSERVATION, FIRE, PSC, DER, POLICE, SHERIFF, COUNTY EXECUTIVE, OHRM, and OIT.
 
 # Documentation
-This web application was done using HTML, CSS, JavaScript, APIs, JSON file, Leaflet, Express, and Node.Js. I used HTML and CSS for the overall design of the website and then used JavaScript for the user interactions with the web application. 
+This web application was done using HTML, CSS, JavaScript, APIs, JSON file, Leaflet, Express, and Node.Js. 
+
+I used HTML and CSS for the overall design of the website and then used JavaScript for the user interactions with the web application. 
+
+Leaflet was used for the map creation and Express/Node.Js was used for the backend part of the website.
 
 All end points are expecting a JSON object/form object with the key agency and an agency bound to that key. Only end point that does not rely on the input is the GET route.
 
