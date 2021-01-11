@@ -16,15 +16,17 @@ Possble agencies users can enter are HEALTH, DPWT, COURTS, OCS, SOIL CONSERVATIO
 # Documentation
 This web application was done using HTML, CSS, JavaScript, APIs, JSON file, Leaflet, Express, and Node.Js. 
 
-I used HTML and CSS for the overall design of the website and then used JavaScript for the user interactions with the web application. 
+I used HTML and CSS for the overall design of the frontend portion of the web application. JavaScript for the user interactions with the web application. 
 
-Leaflet was used for the map creation and Express/Node.Js was used for the backend part of the website.
+Leaflet was used for the map creation based on the Open Street Map API.
+
+Express/Node.Js was used for the backend part of the website, essentially storing the data from the PG County API. 
 
 All end points are expecting a JSON object/form object with the key agency and an agency bound to that key. Only end point that does not rely on the input is the GET route.
 
 Example of JSON object: { agency: 'FIRE' } will cause endpoints to read the agency as FIRE. Key must be 'agency'. Value is not case sensitive. FiRE or fire or any case variation will still be read as FIRE.
 
-GET is used to get all offices and return that to the list and map. Returns all offices in a JSON object un filtered.
+GET is used to get all offices and return that to the list and map. Returns all offices in a JSON object unfiltered.
 
 PUT is used to populate the list of offices with offices of interest based on agency. Returns a filtered JSON object with office: description, address, city, agency.
 
