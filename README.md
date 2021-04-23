@@ -26,15 +26,19 @@ All end points are expecting a JSON object/form object with the key agency and a
 
 Example of JSON object: { agency: 'FIRE' } will cause endpoints to read the agency as FIRE. Key must be 'agency'. Value is not case sensitive. FiRE or fire or any case variation will still be read as FIRE.
 
-GET is used to get all offices and return that to the list and map. Returns all offices in a JSON object unfiltered.
+GET is used to get all offices and return that to the list and map. It returns all offices in a JSON object unfiltered.
 
-PUT is used to populate the list of offices with offices of interest based on agency. Returns a filtered JSON object with office: description, address, city, agency.
+PUT is used to populate the list of offices with offices of interest based on agency. It returns a filtered JSON object with office: description, address, city, agency.
 
-POST is used to get all offices of interest and return information needed to generate map points. Returns a filtered JSON object with office: description, address, city, agency, longitude, latitude. POST includes long and lat PUT does not.
+POST is used to get all offices of interest and return information needed to generate map points. It returns a filtered JSON object with office: description, address, city, agency, longitude, latitude. POST includes long and latitude in which PUT does not.
 
-The data of the different agencies came from the PG County API: https://data.princegeorgescountymd.gov/
+The data of the different agencies came from the PG County API: 
 
-The web application was deployed on Microsoft Azure: https://pgcagencyfinder.azurewebsites.net/
+## https://data.princegeorgescountymd.gov/
+
+The web application was deployed on Microsoft Azure: 
+
+## https://pgcagencyfinder.azurewebsites.net/
 
 
 # Result when opening the application
