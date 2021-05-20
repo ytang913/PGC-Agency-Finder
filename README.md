@@ -36,9 +36,10 @@ The data of the different agencies came from the PG County API:
 
 ## https://data.princegeorgescountymd.gov/
 
-The web application was deployed on Microsoft Azure: 
+The web application was deployed on Microsoft Azure and Heroku: 
 
 ## https://pgcagencyfinder.azurewebsites.net/
+## https://pgcagencyfinder.herokuapp.com/
 
 
 # Result when opening the application
